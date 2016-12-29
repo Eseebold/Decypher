@@ -8,45 +8,41 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/cypher.js"></script>
 
 </head>
 
 <body>
-  <div id="floating-panel">
-    <b>Start: </b>
-    <select id="start">
-    </select>
-    <b>End: </b>
-    <select id="end">
-    </select>
-    <b>Mode of Travel: </b>
-    <select id="mode">
-      <option value="DRIVING">Driving</option>
-      <option value="WALKING">Walking</option>
-      <option value="BICYCLING">Bicycling</option>
-      <option value="TRANSIT">Transit</option>
-    </select>
+
+  <div>
+    <textarea id=textEnvio rows="6" cols="120">
+    </textarea>
+
   </div>
-  <div id="right-panel"></div>
-  <div id="map"></div>
-  &nbsp;
-  <div id="warnings-panel"></div>
+  <div id=botonera>
+    <button id="botonNumLetraIngles">numLetraIngles</button>
+    <button id="botonNumLetraCastellano">numLetraCastellano</button>
+
+  </div>
+  <div>
+    <textarea id=textRetorno rows="6" cols="120">
+    </textarea>
+  </div>
 
 
   <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyD3yEdehAdHOn1Owws2lBP6FZmBfZVgLX8",
-      authDomain: "parsemapper.firebaseapp.com",
-      databaseURL: "https://parsemapper.firebaseio.com",
-      storageBucket: "parsemapper.appspot.com",
-      messagingSenderId: "239779556274"
+      apiKey: "AIzaSyBKpxcx7OY2j7VDn1olJs8K4p1bTVYLaCE",
+      authDomain: "decypher-3458a.firebaseapp.com",
+      databaseURL: "https://decypher-3458a.firebaseio.com",
+      storageBucket: "decypher-3458a.appspot.com",
+      messagingSenderId: "580203715829"
     };
     firebase.initializeApp(config);
   </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVQIzu1Kcx_NNQYuJEXwCn8w3aDWYfKWo&callback=initMap" async defer></script>
 </body>
 
 </html>
