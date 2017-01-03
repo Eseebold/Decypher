@@ -16,17 +16,31 @@ $(document).ready(function () {
     $("#textRetorno").val(textoCompacto);
 
   });
-   $("#aplicarCesarIngles").on("click", function (e) {
+   $("#cesarIngles").on("click", function (e) {
     var textoBase = $("#textEnvio").val();
      var semilla = $("#semilla").val();
     textoCompacto = AplicarCesar("abcInlges", textoBase, semilla);
     $("#textRetorno").val(textoCompacto);
 
   });
-   $("#aplicarCesarCastellano").on("click", function (e) {
+   $("#cesarCastellano").on("click", function (e) {
     var textoBase = $("#textEnvio").val();
      var semilla = $("#semilla").val();
     textoCompacto = AplicarCesar("abcCastellano", textoBase, semilla);
+    $("#textRetorno").val(textoCompacto);
+
+  });
+    $("#vigeniereIngles").on("click", function (e) {
+    var textoBase = $("#textEnvio").val();
+     var clave = $("#clave").val();
+    textoCompacto = AplicarVigeniere("abcInlges", textoBase, clave);
+    $("#textRetorno").val(textoCompacto);
+
+  });
+   $("#vigeniereCastellano").on("click", function (e) {
+    var textoBase = $("#textEnvio").val();
+     var clave = $("#clave").val();
+    textoCompacto = AplicarVigeniere("abcCastellano", textoBase, clave);
     $("#textRetorno").val(textoCompacto);
 
   });
