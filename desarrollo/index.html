@@ -9,24 +9,26 @@
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/main.js"></script>
   <script src="js/cypher.js"></script>
-
 </head>
 
 <body>
-
   <div>
-    <textarea id=textEnvio rows="6" cols="120">
-    </textarea>
-
+    <textarea id=textEnvio rows="6" cols="120"></textarea>
   </div>
-  <div id=botonera>
-    <button id="botonNumLetraIngles">numLetraIngles</button>
-    <button id="botonNumLetraCastellano">numLetraCastellano</button>
-
+  <div id=botonera class="flex-container">
+    <div id=numerico class="flex-item enmarcado-negro">
+      <button id="botonNumLetraIngles">numLetraIngles</button>
+      <button id="botonNumLetraCastellano">numLetraCastellano</button>
+    </div>
+    <div id=cesar class="flex-item enmarcado-negro">
+     <label for=semilla>Semilla</label>
+      <input type=text size="2" maxlength="2" id="semilla" value="1">
+      <button id="aplicarCesarIngles">aplicarCesarIngles</button>
+      <button id="aplicarCesarCastellano">aplicarCesarCastellano</button>
+    </div>
   </div>
   <div>
-    <textarea id=textRetorno rows="6" cols="120">
-    </textarea>
+    <textarea id=textRetorno rows="6" cols="120"></textarea>
   </div>
 
 

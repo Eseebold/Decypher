@@ -5,42 +5,45 @@
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <title>Directions service</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/cypher.js"></script>
-
 </head>
 
 <body>
+  <div>
+    <textarea id=textEnvio rows="5" cols="80"></textarea>
+  </div>
+  <div id=botonera class="flex-container">
+    <div id=numerico class="flex-item enmarcado-negro">
+      <button id="botonNumLetraIngles">numLetraIngles</button>
+      <button id="botonNumLetraCastellano">numLetraCastellano</button>
+    </div>
+    <div id=cesar class="flex-item enmarcado-negro">
+     <label for=semilla>Semilla</label>
+      <input type=text size="2" maxlength="2" id="semilla" value="1">
+      <button id="CesarIngles">CesarIngles</button>
+      <button id="CesarCastellano">CesarCastellano</button>
+    </div>
+  </div>
+  <div>
+    <textarea id=textRetorno rows="5" cols="80"></textarea>
+  </div>
 
- <div>
-  <textarea id=textEnvio rows="6" cols="120">
-</textarea>
 
-</div>
- <div id=botonera>
-<button id="botonNumLetraIngles">numLetraIngles</button>
-<button id="botonNumLetraCastellano">numLetraCastellano</button>
-
-</div>
- <div>
-  <textarea id=textRetorno rows="6" cols="120">
-</textarea>
-</div>
-
-
-<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBKpxcx7OY2j7VDn1olJs8K4p1bTVYLaCE",
-    authDomain: "decypher-3458a.firebaseapp.com",
-    databaseURL: "https://decypher-3458a.firebaseio.com",
-    storageBucket: "decypher-3458a.appspot.com",
-    messagingSenderId: "580203715829"
-  };
-  firebase.initializeApp(config);
-</script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBKpxcx7OY2j7VDn1olJs8K4p1bTVYLaCE",
+      authDomain: "decypher-3458a.firebaseapp.com",
+      databaseURL: "https://decypher-3458a.firebaseio.com",
+      storageBucket: "decypher-3458a.appspot.com",
+      messagingSenderId: "580203715829"
+    };
+    firebase.initializeApp(config);
+  </script>
 
 </body>
 
