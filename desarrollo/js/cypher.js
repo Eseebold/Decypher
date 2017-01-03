@@ -48,8 +48,26 @@ function AplicarVigeniere(abc, textoBase, clave) {
       tablaVigeniere[i][j] = alfabeto.substr(j, 1);
     }
   }
+  var textoCompacto = limpiarTextoBase(textoBase);
+    while (clave.length < textoCompacto.length)
+    {
+      clave= clave+clave;
+    }
+  clave=clave.slice(0,textoCompacto.length);
+
+  for (i = 0; i < (clave.length); i++)
+  {
+    paconsola = (i%clave.length);
+    console.log(paconsola);
+  }
 
 
 
-  console.log(tablaVigeniere);
+
+
+console.log(textoCompacto);
+  console.log(clave.slice(clave));
+  console.log(clave.length);
+  console.log(textoCompacto.length);
+  return textoCompacto
 }
